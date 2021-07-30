@@ -12,7 +12,7 @@ Install the dependencies of `component-test`
 cd component-test && yarn
 ```
 
-# Run the app and cypress together separately
+# Run the app and cypress separately
 
 ```
 make run-dev
