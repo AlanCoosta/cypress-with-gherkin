@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "pluginsFile": "config/plugins.js",
+  "supportFile": "config/support.js",
+  "integrationFolder": "features"
+}
