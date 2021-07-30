@@ -1,4 +1,4 @@
-# Install the dependencies of `app` and `component-test`
+## Install the dependencies of `app` and `component-test`
 
 Install the dependencies of `app`
 
