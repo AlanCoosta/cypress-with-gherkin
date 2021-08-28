@@ -1,37 +1,12 @@
-import { useCallback, useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes } from "routes";
 
-function App() {
-  const [message, setMessage] = useState("");
-
-  const onCallMessage = useCallback((text) => {
-    setMessage(text);
-  }, []);
-
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>{message}</h1>
-
-        <div style={{ display: "flex" }}>
-          <button
-            onClick={() => onCallMessage("Good morning")}
-            data-test="button-goodMorning"
-          >
-            Say Good morning!
-          </button>
-
-          <button
-            onClick={() => onCallMessage("Good night")}
-            data-test="button-goodNight"
-          >
-            Say Good night!
-          </button>
-        </div>
-      </header>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
-}
+};
 
 export default App;
