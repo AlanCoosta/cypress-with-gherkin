@@ -10,10 +10,10 @@ const pageTitle = (title) => {
   cy.get("h1").should("have.text", title);
 };
 
-const HomePage = {
+const Home = {
   goToHome,
   buttonClick,
   pageTitle,
 };
 
-export default HomePage;
+export default Home;
