@@ -1,0 +1,9 @@
+/config
+/coverage
+/dist
+/node_modules
+/server
+**/*.test.js
+**/*.test.jsx
+**/*.test.ts
+**/*.test.tsx

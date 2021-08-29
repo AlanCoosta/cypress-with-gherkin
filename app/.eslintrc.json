@@ -1,0 +1,111 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "react-hooks",
+    "import-helpers"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": { "extensions": [".ts", ".tsx"] }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-shadow": "error",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          "/^@/",
+          "/^components/",
+          "/^stores/",
+          "/^domains/",
+          "/^useCases/",
+          "/^hooks/",
+          "/^services/",
+          "/^converters/",
+          "/^helpers/",
+          "/^utils/",
+          "/^config/",
+          "/^assets/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "import/extensions": [
+      2,
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.test.ts", "**/*.test.tsx", "**/setupTests.ts"]
+      }
+    ],
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": "off",
+    "max-params": ["error", 2],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-restricted-syntax": 0,
+    "no-shadow": "off",
+    "no-use-before-define": 0,
+    "object-literal-sort-keys": 0,
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-uses-react": "off",
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": "off",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": true
+      }
+    ]
+  }
+}

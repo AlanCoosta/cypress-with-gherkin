@@ -1,7 +1,8 @@
-import { useCallback, useState } from "react";
+import { useState, useCallback } from "react";
+
 import "../../App.css";
 
-const Home = () => {
+const Home = (): JSX.Element => {
   const [message, setMessage] = useState("");
 
   const onCallMessage = useCallback((text) => {
@@ -17,6 +18,7 @@ const Home = () => {
           <button
             onClick={() => onCallMessage("Good morning")}
             data-test="button-goodMorning"
+            type="button"
           >
             Say Good morning!
           </button>
@@ -24,6 +26,7 @@ const Home = () => {
           <button
             onClick={() => onCallMessage("Good night")}
             data-test="button-goodNight"
+            type="button"
           >
             Say Good night!
           </button>

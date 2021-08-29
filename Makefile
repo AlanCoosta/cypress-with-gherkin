@@ -9,3 +9,7 @@ run-test:
 .PHONY: run-component-test
 run-component-test:
 	cd component-test && yarn run cypress open
+
+.PHONY: fix-lint
+fix-lint:
+	cd app && yarn eslint --fix src
