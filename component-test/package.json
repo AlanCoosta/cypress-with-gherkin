@@ -7,6 +7,7 @@
     "step_definitions": "step_definitions/"
   },
   "devDependencies": {
-    "@types/cypress-cucumber-preprocessor": "^4.0.1"
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "typescript": "^4.4.2"
   }
 }

@@ -1,5 +1,5 @@
 import { When, And, Then } from "cypress-cucumber-preprocessor/steps";
-import HomePage from "../page_objects/Home.page";
+import HomePage from "../../page_objects/Home/Home.page";
 
 When(/^I open the Home page$/, () => {
   HomePage.goToHome();
