@@ -1,1 +1,1 @@
-export { default as Sum } from "./sum";
+export { default as sum } from "./sum";

@@ -1,7 +1,5 @@
 import { useState, useCallback } from "react";
 
-import "../../App.css";
-
 const Home = (): JSX.Element => {
   const [message, setMessage] = useState("");
 
